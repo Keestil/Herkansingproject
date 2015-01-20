@@ -1,26 +1,21 @@
 package nl.mprog.projects.npuzzle10385827;
 
-import android.app.Activity;
 import android.content.Context;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.TextView;
 
+//This class is just an adapter for our listview in ImageActivity
 public class CustomListAdapter extends BaseAdapter {
 
 	private Context context;
-	private String[] itemname;
 	private Integer[] imgid;
 
-	//defining the imported data from ImageActivity
-	public CustomListAdapter(Context context, String[] itemname,
-			Integer[] imgid) {
+	//Defining the imported data from ImageActivity
+	public CustomListAdapter(Context context, Integer[] imgid) {
+		
 		this.context = context;
-		this.itemname = itemname;
 		this.imgid = imgid;
 	}
 
